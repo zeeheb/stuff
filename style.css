@@ -59,8 +59,20 @@
   border: 1px solid;
   height: 45px;
   margin-bottom: 2px;
+  font-size: 20px;
 }
 
 .menu {
   text-align: center;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+}
+
+.table {
+  width: 100%;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  border: 1px solid;
+  margin-bottom: 10px;
 }
