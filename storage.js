@@ -10,27 +10,19 @@ function loadContacts() {
 
   const table = document.querySelector('.table');
   //   const row = document.createElement('tr');
-
   pessoasVec.forEach(pessoasVec => {
-    console.log(pessoasVec);
     const row = document.createElement('tr');
-    const cell = document.createElement('td');
-    const cellfname = document.createTextNode(pessoasVec.fname + ' ');
-    const celllname = document.createTextNode(pessoasVec.lname + ' ');
-    const cellemail = document.createTextNode(pessoasVec.em + ' ');
-    //const cellpw = document.createTextNode(pessoasVec.passw + ' ');
-    const cellphone = document.createTextNode(pessoasVec.phn + ' ');
+    console.log(pessoasVec);
 
-    const mybr = document.createElement('br');
+    buildTd = (tag, i) => {
+      const cell = document.createElement('td');
+      const celltext = document.createTextNode(pessoasVec[tag]);
+      cell.appendChild(celltext);
+      row.appendChild(cell);
+    };
 
-    cell.appendChild(cellfname);
-    cell.appendChild(celllname);
-    cell.appendChild(cellemail);
-    //cell.appendChild(cellpw);
-    cell.appendChild(cellphone);
-    row.appendChild(cell);
+    ['fname', 'lname', 'em', 'passw', 'phn'].forEach(buildTd);
 
     table.appendChild(row);
-    table.appendChild(cell);
   });
 }
