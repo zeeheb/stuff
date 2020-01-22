@@ -8,14 +8,16 @@
     <title>CSS</title>
   </head>
   <body>
-    <h1 class="titulo">Sign up</h1>
+    <h1 class="titulo">Register</h1>
     <form class="form">
       <div class="nome">
         <input type="text" class="firstname" placeholder="First name" />
+        <br />
         <input type="text" class="lastname" placeholder="Last name" />
       </div>
       <br />
-      <input type="email" class="email" placeholder="Email" />
+      <!-- falta alterar para type email -->
+      <input type="text" class="email" placeholder="Email" />
       <br />
       <br />
       <input type="password" class="pw" placeholder="Password" />
@@ -31,8 +33,17 @@
       </div>
 
       <br />
-      <input type="submit" class="btn" value="SIGN IN" />
+
+      <input type="submit" class="btn" value="Register" />
     </form>
+    <br />
+
+    <!-- <input type="button"
+      class="gotostorage"
+      onclick="window.location.href='storage.html'"
+      value="Storage"
+    /> -->
+
     <script src="app.js"></script>
   </body>
 </html>

@@ -10,30 +10,30 @@
 }
 
 .firstname {
-  float: left;
-  width: 49%;
+  width: 50%;
   height: 30px;
+  margin-bottom: 2px;
 }
 
 .lastname {
-  /* float: right; */
-  width: 49%;
+  width: 50%;
   height: 30px;
 }
 
 .form {
   padding-left: 150px;
+  padding-right: 150px;
 
   text-align: center;
 }
 
 .email {
-  width: 100%;
+  width: 50%;
   height: 30px;
 }
 
 .pw {
-  width: 100%;
+  width: 50%;
   height: 30px;
 }
 
@@ -43,12 +43,12 @@
 }
 
 .phone {
-  width: 100%;
+  width: 50%;
   height: 30px;
 }
 
 .labelnews {
-  font-size: 15px;
+  font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -58,4 +58,9 @@
   border-radius: 3px;
   border: 1px solid;
   height: 45px;
+  margin-bottom: 2px;
+}
+
+.menu {
+  text-align: center;
 }
